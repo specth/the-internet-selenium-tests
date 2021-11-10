@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
-    static String baseUrl = "http://the-internet.herokuapp.com";
+    static String protocol = "http";
+    static String baseUrl = "the-internet.herokuapp.com";
     String subPageUrl;
 
     public BasePage(WebDriver driver) {
@@ -41,6 +42,6 @@ public class BasePage {
     }
 
     public void visit() {
-        driver.get(baseUrl + subPageUrl);
+        driver.get(protocol + "://" + baseUrl + subPageUrl);
     }
 }
