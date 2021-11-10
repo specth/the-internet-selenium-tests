@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="de.thorsten.CalculatorTest" time="0.037" tests="23" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper/target/test-classes:/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper/target/classes:/Users/tspecht/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/tspecht/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/tspecht/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/tspecht/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/tspecht/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/tspecht/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/tspecht/.m2/repository/io/github/bonigarcia/webdrivermanager/4.3.1/webdrivermanager-4.3.1.jar:/Users/tspecht/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/tspecht/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/tspecht/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/tspecht/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/tspecht/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/tspecht/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/tspecht/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/Users/tspecht/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/tspecht/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/tspecht/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/tspecht/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/tspecht/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/tspecht/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/tspecht/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/tspecht/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/tspecht/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/tspecht/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/tspecht/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/tspecht/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/tspecht/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/tspecht/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper/target/surefire/surefirebooter1036390933096687732.jar /Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper/target/surefire 2021-03-28T22-12-13_113-jvmRun1 surefire5783908166978853797tmp surefire_01298158960123930453tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper/target/test-classes:/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper/target/classes:/Users/tspecht/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/tspecht/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/tspecht/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/tspecht/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/tspecht/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/tspecht/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/tspecht/.m2/repository/io/github/bonigarcia/webdrivermanager/4.3.1/webdrivermanager-4.3.1.jar:/Users/tspecht/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/tspecht/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/tspecht/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/tspecht/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/tspecht/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/tspecht/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/tspecht/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/Users/tspecht/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/tspecht/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/tspecht/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/tspecht/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/tspecht/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/tspecht/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/tspecht/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/tspecht/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/tspecht/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/tspecht/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/tspecht/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/tspecht/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/tspecht/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/tspecht/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/tspecht/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/tspecht"/>
+    <property name="user.language" value="de"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.vendor.version" value="Zulu11.45+27-CA"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper/target/surefire/surefirebooter1036390933096687732.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.10+9-LTS"/>
+    <property name="user.name" value="tspecht"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu11.45+27-CA"/>
+    <property name="localRepository" value="/Users/tspecht/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="java.io.tmpdir" value="/var/folders/dk/5g9sv1rx0k38j4pnnql9zb9m0000gn/T/"/>
+    <property name="idea.version" value="2020.3.2"/>
+    <property name="java.version" value="11.0.10"/>
+    <property name="user.dir" value="/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/tspecht/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="11.0.10+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[1]" classname="de.thorsten.CalculatorTest" time="0.006"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[2]" classname="de.thorsten.CalculatorTest" time="0"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[3]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[4]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[5]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[6]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[7]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[8]" classname="de.thorsten.CalculatorTest" time="0"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[9]" classname="de.thorsten.CalculatorTest" time="0"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[10]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[11]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[12]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[13]" classname="de.thorsten.CalculatorTest" time="0"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[14]" classname="de.thorsten.CalculatorTest" time="0"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[15]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[16]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[17]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[18]" classname="de.thorsten.CalculatorTest" time="0"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[19]" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithZeroShouldReturnZero{RepetitionInfo}[20]" classname="de.thorsten.CalculatorTest" time="0"/>
+  <testcase name="addShouldShowCorrectSum" classname="de.thorsten.CalculatorTest" time="0.002"/>
+  <testcase name="testMultiply" classname="de.thorsten.CalculatorTest" time="0.001"/>
+  <testcase name="multiplyWithOneShouldReturnSecondGivenNumber" classname="de.thorsten.CalculatorTest" time="0">
+    <skipped message="Test is not need"/>
+  </testcase>
+</testsuite>
