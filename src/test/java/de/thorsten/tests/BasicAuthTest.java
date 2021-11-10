@@ -1,11 +1,9 @@
 package de.thorsten.tests;
 
-import de.thorsten.pages.AddRemoveElementsPage;
 import de.thorsten.pages.BasicAuthPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BasicAuthTest extends BaseTest {
