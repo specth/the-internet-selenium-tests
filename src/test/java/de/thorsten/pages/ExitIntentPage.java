@@ -13,14 +13,11 @@ public class ExitIntentPage extends BasePage {
     }
 
     // Define element selectors
-    @FindBy(className = "example")
-    private WebElement pageContent;
-
     @FindBy(id = "ouibounce-modal")
-    private WebElement bounceModal;
+    protected WebElement bounceModal;
 
     @FindBy(css = ".modal-footer>p")
-    private WebElement closeModalLink;
+    protected WebElement closeModalLink;
 
     public void moveCursorOutOfViewPane() throws AWTException, InterruptedException {
         Robot robot = new Robot();

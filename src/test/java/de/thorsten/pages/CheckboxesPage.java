@@ -13,10 +13,10 @@ public class CheckboxesPage extends BasePage {
 
     // Define element selectors
     @FindBy(xpath = "//*[@id='checkboxes']/input[1]")
-    private WebElement firstCheckbox;
+    protected WebElement firstCheckbox;
 
     @FindBy(xpath = "//*[@id='checkboxes']/input[2]")
-    private WebElement secondCheckbox;
+    protected WebElement secondCheckbox;
 
     // Actions
     public void selectFirstCheckbox() {

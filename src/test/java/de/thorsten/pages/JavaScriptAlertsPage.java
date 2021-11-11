@@ -14,16 +14,16 @@ public class JavaScriptAlertsPage extends BasePage {
 
     // Define element selectors
     @FindBy(css = "button[onclick='jsAlert()']")
-    private WebElement jsAlertButton;
+    protected WebElement jsAlertButton;
 
     @FindBy(css = "button[onclick='jsConfirm()']")
-    private WebElement jsConfirmButton;
+    protected WebElement jsConfirmButton;
 
     @FindBy(css = "button[onclick='jsPrompt()']")
-    private WebElement jsPromptButton;
+    protected WebElement jsPromptButton;
 
     @FindBy(id = "result")
-    private WebElement resultParagraph;
+    protected WebElement resultParagraph;
 
     // Actions
     public void clickJsAlertButton() {

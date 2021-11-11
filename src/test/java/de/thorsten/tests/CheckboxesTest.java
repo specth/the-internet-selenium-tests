@@ -1,7 +1,6 @@
 package de.thorsten.tests;
 
 import de.thorsten.pages.CheckboxesPage;
-import de.thorsten.pages.JavaScriptAlertsPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

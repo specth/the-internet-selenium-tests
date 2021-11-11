@@ -16,19 +16,19 @@ public class AddRemoveElementsPage extends BasePage {
 
     // Define element selectors
     @FindBy(css = "button[onclick='addElement()']")
-    private WebElement addElementButton;
+    protected WebElement addElementButton;
 
     @FindBy(css = "#elements>button:first-child")
-    private WebElement firstDeleteElementButton;
+    protected WebElement firstDeleteElementButton;
 
     @FindBy(css = "#elements>button:nth-child(2)")
-    private WebElement secondDeleteElementButton;
+    protected WebElement secondDeleteElementButton;
 
     @FindBy(css = "#elements>button:last-child")
-    private WebElement lastDeleteElementButton;
+    protected WebElement lastDeleteElementButton;
 
     @FindBy(css = "#elements>button")
-    private List<WebElement> deleteElementButtons;
+    protected List<WebElement> deleteElementButtons;
 
     // Actions
     public void clickAddElementButton() { addElementButton.click(); }

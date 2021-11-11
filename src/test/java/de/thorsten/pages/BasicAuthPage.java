@@ -13,7 +13,7 @@ public class BasicAuthPage extends BasePage {
 
     // Define element selectors
     @FindBy(css = "h3")
-    private WebElement headline;
+    protected WebElement headline;
 
     // Actions
     public void visit(String username, String password) {
