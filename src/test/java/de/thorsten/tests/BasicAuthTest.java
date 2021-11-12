@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class BasicAuthTest extends BaseTest {
 
     @Test
-    @DisplayName("Button to add a web element works")
+    @DisplayName("User can access page when providing basic auth credentials")
     public void sendingBasicAuthInformationWorks() {
         BasicAuthPage basicAuthPage = new BasicAuthPage(driver);
         basicAuthPage.visit("admin", "admin");

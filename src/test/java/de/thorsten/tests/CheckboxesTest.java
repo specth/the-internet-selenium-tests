@@ -16,11 +16,18 @@ public class CheckboxesTest extends BaseTest {
         checkboxesPage.selectFirstCheckbox();
         assertTrue(checkboxesPage.isFirstCheckboxSelected());
 
-        checkboxesPage.deselectFirstCheckbox();
-        assertFalse(checkboxesPage.isFirstCheckboxSelected());
-
         checkboxesPage.selectSecondCheckbox();
         assertTrue(checkboxesPage.isSecondCheckboxSelected());
+    }
+
+    @Test
+    @DisplayName("Deselecting a checkbox works")
+    public void deselectCheckboxWorks() {
+        CheckboxesPage checkboxesPage = new CheckboxesPage(driver);
+        checkboxesPage.visit();
+
+        checkboxesPage.deselectFirstCheckbox();
+        assertFalse(checkboxesPage.isFirstCheckboxSelected());
 
         checkboxesPage.deselectSecondCheckbox();
         assertFalse(checkboxesPage.isSecondCheckboxSelected());
