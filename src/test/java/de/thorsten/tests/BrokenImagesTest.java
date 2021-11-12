@@ -20,6 +20,7 @@ public class BrokenImagesTest extends BaseTest {
         assertFalse(brokenImagesPage.allImagesAreOkay());
         assertEquals(brokenImagesPage.countBrokenImages(), 2);
         assertEquals(brokenImagesPage.countAllImages(), 4);
+        assertEquals(brokenImagesPage.countHealthyImages(), 2);
 
     }
 }

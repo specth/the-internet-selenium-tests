@@ -21,22 +21,30 @@ public class BrokenImagesPage extends BasePage {
     @FindBy(tagName = "img")
     protected List<WebElement> listOfImages;
 
+    // Define metrics for test methods
     int amountOfBrokenImages;
+    int amountOfHealthyImages;
 
     public boolean allImagesAreOkay() throws IOException {
         countBrokenImages();
 
         return amountOfBrokenImages == 0;
     }
-/*
-
-    public int countHealthyImages() {
-
-    }
-*/
 
     public int countAllImages() {
         return listOfImages.size();
+    }
+
+    public int countHealthyImages() throws IOException {
+        amountOfHealthyImages = 0;
+        for (WebElement img : listOfImages)
+        {
+            if (img != null)
+            {
+                checkIfImageIsHealthy(img);
+            }
+        }
+        return amountOfHealthyImages;
     }
 
     public int countBrokenImages() throws IOException {
@@ -45,19 +53,22 @@ public class BrokenImagesPage extends BasePage {
         {
             if (img != null)
             {
-                checkIfImageIsHealthy(img, 200);
+                checkIfImageIsHealthy(img);
             }
         }
         return amountOfBrokenImages;
     }
 
-    public void checkIfImageIsHealthy(WebElement element, int httpCode) throws IOException {
+    private void checkIfImageIsHealthy(WebElement element) throws IOException {
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet request = new HttpGet(element.getAttribute("src"));
         HttpResponse response = client.execute(request);
         /* For valid images, the HttpStatus will be 200 */
-        if (response.getStatusLine().getStatusCode() != httpCode)
+        if (response.getStatusLine().getStatusCode() == 200)
         {
+            System.out.println(element.getAttribute("outerHTML") + " is okay.");
+            amountOfHealthyImages++;
+        } else {
             System.out.println(element.getAttribute("outerHTML") + " is broken.");
             amountOfBrokenImages++;
         }
