@@ -12,8 +12,8 @@ public class BrokenImagesTest extends BaseTest {
 
 
     @Test
-    @DisplayName("Modal opens when mouse leaves viewport")
-    public void openExitIntentModal() throws IOException {
+    @DisplayName("Find all images on the page and check if any are broken")
+    public void findBrokenImages() throws IOException {
         BrokenImagesPage brokenImagesPage = new BrokenImagesPage(driver);
         brokenImagesPage.visit();
 
