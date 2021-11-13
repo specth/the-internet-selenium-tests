@@ -4,7 +4,6 @@ import de.thorsten.extensions.Helper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.util.List;
 
 public class AddRemoveElementsPage extends BasePage {
@@ -16,25 +15,30 @@ public class AddRemoveElementsPage extends BasePage {
 
     // Define element selectors
     @FindBy(css = "button[onclick='addElement()']")
-    protected WebElement addElementButton;
+    WebElement addElementButton;
 
     @FindBy(css = "#elements>button:first-child")
-    protected WebElement firstDeleteElementButton;
+    WebElement firstDeleteElementButton;
 
     @FindBy(css = "#elements>button:nth-child(2)")
-    protected WebElement secondDeleteElementButton;
+    WebElement secondDeleteElementButton;
 
     @FindBy(css = "#elements>button:last-child")
-    protected WebElement lastDeleteElementButton;
+    WebElement lastDeleteElementButton;
 
     @FindBy(css = "#elements>button")
-    protected List<WebElement> deleteElementButtons;
+    List<WebElement> deleteElementButtons;
 
     // Actions
-    public void clickAddElementButton() { addElementButton.click(); }
-    public void clickFirstDeleteElementButton() { firstDeleteElementButton.click(); }
+    public void clickAddElementButton() {
+        addElementButton.click();
+    }
+
+    public void clickFirstDeleteElementButton() {
+        firstDeleteElementButton.click();
+    }
+
     public int getNumberOfDeleteElementButtons() {
-        //return driver.findElements(By.cssSelector("#elements>button")).size();
         return deleteElementButtons.size();
     }
 

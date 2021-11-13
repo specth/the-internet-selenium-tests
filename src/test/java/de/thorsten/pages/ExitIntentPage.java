@@ -3,7 +3,6 @@ package de.thorsten.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.awt.*;
 
 public class ExitIntentPage extends BasePage {
@@ -14,10 +13,10 @@ public class ExitIntentPage extends BasePage {
 
     // Define element selectors
     @FindBy(id = "ouibounce-modal")
-    protected WebElement bounceModal;
+    WebElement bounceModal;
 
     @FindBy(css = ".modal-footer>p")
-    protected WebElement closeModalLink;
+    WebElement closeModalLink;
 
     public void moveCursorOutOfViewPane() throws AWTException, InterruptedException {
         Robot robot = new Robot();

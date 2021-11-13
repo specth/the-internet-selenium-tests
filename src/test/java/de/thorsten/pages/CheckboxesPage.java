@@ -11,14 +11,14 @@ public class CheckboxesPage extends BasePage {
         this.subPageUrl = "/checkboxes";
     }
 
-    // Define element selectors
+    // Define element selectors TODO: Create list of checkboxes and select from list
     @FindBy(xpath = "//*[@id='checkboxes']/input[1]")
-    protected WebElement firstCheckbox;
+    WebElement firstCheckbox;
 
     @FindBy(xpath = "//*[@id='checkboxes']/input[2]")
-    protected WebElement secondCheckbox;
+    WebElement secondCheckbox;
 
-    // Actions
+    // Actions TODO: Create a generic function to select a given checkbox
     public void selectFirstCheckbox() {
         if (!firstCheckbox.isSelected()) {
             firstCheckbox.click();

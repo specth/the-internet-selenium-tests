@@ -7,11 +7,11 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.io.IOException;
 import java.util.List;
 
 public class BrokenImagesPage extends BasePage {
+
     public BrokenImagesPage(WebDriver driver) {
         super(driver);
         this.subPageUrl = "/broken_images";
@@ -19,17 +19,11 @@ public class BrokenImagesPage extends BasePage {
 
     // Define element selectors
     @FindBy(tagName = "img")
-    protected List<WebElement> listOfImages;
+    List<WebElement> listOfImages;
 
     // Define metrics for test methods
     int amountOfBrokenImages;
     int amountOfHealthyImages;
-
-    public boolean allImagesAreOkay() throws IOException {
-        countBrokenImages();
-
-        return amountOfBrokenImages == 0;
-    }
 
     public int countAllImages() {
         return listOfImages.size();
@@ -59,10 +53,16 @@ public class BrokenImagesPage extends BasePage {
         return amountOfBrokenImages;
     }
 
+    public boolean allImagesAreOkay() throws IOException {
+        countBrokenImages();
+        return amountOfBrokenImages == 0;
+    }
+
     private void checkIfImageIsHealthy(WebElement element) throws IOException {
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet request = new HttpGet(element.getAttribute("src"));
         HttpResponse response = client.execute(request);
+
         /* For valid images, the HttpStatus will be 200 */
         if (response.getStatusLine().getStatusCode() == 200)
         {

@@ -14,14 +14,14 @@ public class BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    protected WebDriver driver;
-    protected Alert alert;
+    WebDriver driver;
+    Alert alert;
 
     /**
      * Switch to the currently opened Alert to interact with it.
      * @return alert
      */
-    public Alert getAlert() {
+    private Alert getAlert() {
         return alert = driver.switchTo().alert();
     }
 
