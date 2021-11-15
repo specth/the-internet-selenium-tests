@@ -18,7 +18,8 @@ public class TyposPage extends BasePage {
     @FindBy (css = ".example>p:last-child")
     WebElement paragraph;
 
-    public boolean textOfSecondParagraphIsCorrect() {
+    // Checks
+    public boolean isTextOfSecondParagraphCorrect() {
         String actualTextOfSecondParagraph = paragraph.getText();
         System.out.println("Expected text of paragraph: " + textOfSecondParagraph);
         System.out.println("Actual text of paragraph: " + actualTextOfSecondParagraph);
