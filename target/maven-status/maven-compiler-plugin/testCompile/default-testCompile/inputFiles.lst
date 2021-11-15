@@ -1,2 +1,15 @@
-/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper/src/test/java/de/thorsten/CalculatorTest.java
-/Users/tspecht/Documents/GitHub/java-nest/webscraper/webscraper/webscraper/src/test/java/de/thorsten/javaScriptAlertsTest.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/pages/BasePage.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/tests/JavaScriptAlertsTest.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/pages/BasicAuthPage.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/tests/BasicAuthTest.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/pages/JavaScriptAlertsPage.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/pages/AddRemoveElementsPage.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/tests/BaseTest.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/tests/ExitIntentTest.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/pages/ExitIntentPage.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/tests/BrokenImagesTest.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/pages/BrokenImagesPage.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/tests/AddRemoveElementsTest.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/pages/CheckboxesPage.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/extensions/Helper.java
+/Users/tspecht/Documents/github/the-internet-selenium-tests/src/test/java/de/thorsten/tests/CheckboxesTest.java
