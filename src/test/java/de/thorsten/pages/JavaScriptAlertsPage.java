@@ -42,7 +42,7 @@ public class JavaScriptAlertsPage extends BasePage {
         return resultParagraph.getText();
     }
 
-    // Assertions
+    // Checks
     public boolean isAlertPresent() {
         try {
             driver.switchTo().alert();

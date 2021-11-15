@@ -46,7 +46,7 @@ public class CheckboxesPage extends BasePage {
         }
     }
 
-    // Assertions
+    // Checks
     public boolean isFirstCheckboxSelected() {
         return firstCheckbox.isSelected();
     }

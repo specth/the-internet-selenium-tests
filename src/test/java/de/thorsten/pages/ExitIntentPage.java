@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import java.awt.*;
 
 public class ExitIntentPage extends BasePage {
+
     public ExitIntentPage(WebDriver driver) {
         super(driver);
         this.subPageUrl = "/exit_intent";
@@ -18,6 +19,7 @@ public class ExitIntentPage extends BasePage {
     @FindBy(css = ".modal-footer>p")
     WebElement closeModalLink;
 
+    // Actions
     public void moveCursorOutOfViewPane() throws AWTException, InterruptedException {
         Robot robot = new Robot();
         Thread.sleep(1000);
@@ -25,12 +27,13 @@ public class ExitIntentPage extends BasePage {
         Thread.sleep(1000);
     }
 
-    public boolean isBounceModalPresent() {
-        return bounceModal.isDisplayed();
-    }
-
     public void closeBounceModal() {
         closeModalLink.click();
+    }
+
+    // Checks
+    public boolean isBounceModalPresent() {
+        return bounceModal.isDisplayed();
     }
 
 }

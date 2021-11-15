@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
+
     static String protocol = "http";
     static String baseUrl = "the-internet.herokuapp.com";
     String subPageUrl;

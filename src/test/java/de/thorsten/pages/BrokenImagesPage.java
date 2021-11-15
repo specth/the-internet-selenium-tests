@@ -25,6 +25,13 @@ public class BrokenImagesPage extends BasePage {
     int amountOfBrokenImages;
     int amountOfHealthyImages;
 
+    // Checks
+    public boolean areAllImagesOkay() throws IOException {
+        countBrokenImages();
+        return amountOfBrokenImages == 0;
+    }
+
+    // Helper
     public int countAllImages() {
         return listOfImages.size();
     }
@@ -51,11 +58,6 @@ public class BrokenImagesPage extends BasePage {
             }
         }
         return amountOfBrokenImages;
-    }
-
-    public boolean allImagesAreOkay() throws IOException {
-        countBrokenImages();
-        return amountOfBrokenImages == 0;
     }
 
     private void checkIfImageIsHealthy(WebElement element) throws IOException {

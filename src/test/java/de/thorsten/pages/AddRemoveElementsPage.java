@@ -50,7 +50,7 @@ public class AddRemoveElementsPage extends BasePage {
         }
     }
 
-    // Assertions
+    // Checks
     public boolean firstDeleteElementButtonIsDisplayed() {
         return firstDeleteElementButton.isDisplayed();
     }

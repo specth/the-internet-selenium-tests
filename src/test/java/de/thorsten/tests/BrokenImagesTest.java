@@ -15,7 +15,7 @@ public class BrokenImagesTest extends BaseTest {
         brokenImagesPage.visit();
 
         // test is based on assumption that it's expected to have 2 broken and 2 healthy images
-        assertFalse(brokenImagesPage.allImagesAreOkay());
+        assertFalse(brokenImagesPage.areAllImagesOkay());
         // those assertions are not really useful but just for the sake of practise
         assertEquals(brokenImagesPage.countBrokenImages(), 2);
         assertEquals(brokenImagesPage.countAllImages(), 4);

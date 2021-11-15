@@ -20,8 +20,8 @@ public class BasicAuthPage extends BasePage {
         driver.get(protocol + "://" + username + ":" + password + "@" + baseUrl + subPageUrl);
     }
 
-    // Assertions
-    public boolean pageAccessed() {
+    // Checks
+    public boolean isLoginSuccessful() {
         return headline.isDisplayed();
     }
 }

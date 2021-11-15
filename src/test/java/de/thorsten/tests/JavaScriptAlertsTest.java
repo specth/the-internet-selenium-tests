@@ -2,7 +2,6 @@ package de.thorsten.tests;
 
 import de.thorsten.pages.JavaScriptAlertsPage;
 import org.junit.jupiter.api.*;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class JavaScriptAlertsTest extends BaseTest {
