@@ -1,6 +1,9 @@
+de/thorsten/pages/HoversPage.class
 de/thorsten/tests/JavaScriptAlertsTest.class
+de/thorsten/tests/TyposTest.class
 de/thorsten/tests/AddRemoveElementsTest.class
 de/thorsten/pages/AddRemoveElementsPage.class
+de/thorsten/tests/HoversTest.class
 de/thorsten/pages/BrokenImagesPage.class
 de/thorsten/tests/ExitIntentTest.class
 de/thorsten/extensions/Helper.class
@@ -11,5 +14,6 @@ de/thorsten/tests/BasicAuthTest.class
 de/thorsten/pages/JavaScriptAlertsPage.class
 de/thorsten/pages/BasicAuthPage.class
 de/thorsten/pages/ExitIntentPage.class
+de/thorsten/pages/TyposPage.class
 de/thorsten/tests/BrokenImagesTest.class
 de/thorsten/tests/BaseTest.class
