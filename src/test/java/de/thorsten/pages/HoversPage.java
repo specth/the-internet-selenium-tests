@@ -37,7 +37,6 @@ public class HoversPage extends BasePage {
 
         switch (user) {
             case 1:
-                // Alternative hover method implemented in Base Page
                 hover(user1Image);
                 break;
             case 2:
@@ -61,6 +60,5 @@ public class HoversPage extends BasePage {
     public boolean username3IsDisplayed() {
         return user3Name.isDisplayed();
     }
-
 
 }
