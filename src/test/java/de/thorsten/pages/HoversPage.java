@@ -41,10 +41,10 @@ public class HoversPage extends BasePage {
                 hover(user1Image);
                 break;
             case 2:
-                action.moveToElement(user2Image);
+                hover(user2Image);
                 break;
             case 3:
-                action.moveToElement(user3Image);
+                hover(user3Image);
                 break;
         }
     }

@@ -50,6 +50,6 @@ public class BasePage {
 
     public void hover(WebElement webelement) {
         Actions action = new Actions(driver);
-        action.moveToElement(webelement);
+        action.moveToElement(webelement).build().perform();
     }
 }
