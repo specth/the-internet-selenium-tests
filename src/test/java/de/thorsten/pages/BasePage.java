@@ -2,6 +2,8 @@ package de.thorsten.pages;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
@@ -44,5 +46,10 @@ public class BasePage {
 
     public void visit() {
         driver.get(protocol + "://" + baseUrl + subPageUrl);
+    }
+
+    public void hover(WebElement webelement) {
+        Actions action = new Actions(driver);
+        action.moveToElement(webelement);
     }
 }
