@@ -48,6 +48,10 @@ public class BasePage {
         driver.get(protocol + "://" + baseUrl + subPageUrl);
     }
 
+    public void refresh() {
+        driver.navigate().refresh();
+    }
+
     public void hover(WebElement webelement) {
         Actions action = new Actions(driver);
         action.moveToElement(webelement).build().perform();
