@@ -32,7 +32,7 @@ public class ExitIntentPage extends BasePage {
     }
 
     // Checks
-    public boolean isBounceModalPresent() {
+    public boolean bounceModalIsPresent() {
         return bounceModal.isDisplayed();
     }
 

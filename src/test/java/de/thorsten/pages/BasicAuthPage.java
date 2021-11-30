@@ -21,7 +21,7 @@ public class BasicAuthPage extends BasePage {
     }
 
     // Checks
-    public boolean isLoginSuccessful() {
+    public boolean loginIsSuccessful() {
         return headline.isDisplayed();
     }
 }

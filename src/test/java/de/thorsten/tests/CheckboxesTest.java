@@ -14,10 +14,10 @@ public class CheckboxesTest extends BaseTest {
         CheckboxesPage checkboxesPage = new CheckboxesPage(driver);
         checkboxesPage.visit();
         checkboxesPage.selectFirstCheckbox();
-        assertTrue(checkboxesPage.isFirstCheckboxSelected());
+        assertTrue(checkboxesPage.firstCheckboxIsSelected());
 
         checkboxesPage.selectSecondCheckbox();
-        assertTrue(checkboxesPage.isSecondCheckboxSelected());
+        assertTrue(checkboxesPage.secondCheckboxIsSelected());
     }
 
     @Test
@@ -27,9 +27,9 @@ public class CheckboxesTest extends BaseTest {
         checkboxesPage.visit();
 
         checkboxesPage.deselectFirstCheckbox();
-        assertFalse(checkboxesPage.isFirstCheckboxSelected());
+        assertFalse(checkboxesPage.firstCheckboxIsSelected());
 
         checkboxesPage.deselectSecondCheckbox();
-        assertFalse(checkboxesPage.isSecondCheckboxSelected());
+        assertFalse(checkboxesPage.secondCheckboxIsSelected());
     }
 }

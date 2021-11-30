@@ -47,11 +47,11 @@ public class CheckboxesPage extends BasePage {
     }
 
     // Checks
-    public boolean isFirstCheckboxSelected() {
+    public boolean firstCheckboxIsSelected() {
         return firstCheckbox.isSelected();
     }
 
-    public boolean isSecondCheckboxSelected() {
+    public boolean secondCheckboxIsSelected() {
         return secondCheckbox.isSelected();
     }
 }

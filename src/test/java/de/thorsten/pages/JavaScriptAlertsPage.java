@@ -43,7 +43,7 @@ public class JavaScriptAlertsPage extends BasePage {
     }
 
     // Checks
-    public boolean isAlertPresent() {
+    public boolean alertIsPresent() {
         try {
             driver.switchTo().alert();
             return true;

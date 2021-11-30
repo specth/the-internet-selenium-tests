@@ -14,6 +14,6 @@ public class BasicAuthTest extends BaseTest {
         BasicAuthPage basicAuthPage = new BasicAuthPage(driver);
         basicAuthPage.visit("admin", "admin");
 
-        assertTrue(basicAuthPage.isLoginSuccessful());
+        assertTrue(basicAuthPage.loginIsSuccessful());
     }
 }

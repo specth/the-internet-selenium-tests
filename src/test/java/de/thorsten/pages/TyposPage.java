@@ -19,7 +19,7 @@ public class TyposPage extends BasePage {
     WebElement paragraph;
 
     // Checks
-    public boolean isTextOfSecondParagraphCorrect() {
+    public boolean textOfSecondParagraphIsCorrect() {
         String actualTextOfSecondParagraph = paragraph.getText();
         System.out.println("Expected text of paragraph: " + textOfSecondParagraph);
         System.out.println("Actual text of paragraph: " + actualTextOfSecondParagraph);

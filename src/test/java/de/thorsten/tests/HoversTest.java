@@ -11,7 +11,6 @@ public class HoversTest extends BaseTest {
 
     @Test
     @DisplayName("Username appears when hovering above the image")
-    // TODO: Assertions currently fail. FIX!
     public void correctTextIsDisplayed() {
         HoversPage hoversPage = new HoversPage(driver);
         hoversPage.visit();

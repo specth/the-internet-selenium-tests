@@ -26,7 +26,7 @@ public class BrokenImagesPage extends BasePage {
     int amountOfHealthyImages;
 
     // Checks
-    public boolean areAllImagesOkay() throws IOException {
+    public boolean allImagesAreOkay() throws IOException {
         countBrokenImages();
         return amountOfBrokenImages == 0;
     }

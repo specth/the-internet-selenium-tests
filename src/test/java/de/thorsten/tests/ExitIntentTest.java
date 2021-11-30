@@ -17,9 +17,9 @@ public class ExitIntentTest extends BaseTest {
         exitIntentPage.visit();
 
         exitIntentPage.moveCursorOutOfViewPane();
-        assertTrue(exitIntentPage.isBounceModalPresent());
+        assertTrue(exitIntentPage.bounceModalIsPresent());
 
         exitIntentPage.closeBounceModal();
-        assertFalse(exitIntentPage.isBounceModalPresent());
+        assertFalse(exitIntentPage.bounceModalIsPresent());
     }
 }

@@ -14,7 +14,7 @@ public class JavaScriptAlertsTest extends BaseTest {
 
         javaScriptAlertsPage.clickJsAlertButton();
 
-        assertTrue(javaScriptAlertsPage.isAlertPresent());
+        assertTrue(javaScriptAlertsPage.alertIsPresent());
     }
 
     @Test
@@ -26,7 +26,7 @@ public class JavaScriptAlertsTest extends BaseTest {
 
         javaScriptAlertsPage.acceptAlert();
 
-        assertFalse(javaScriptAlertsPage.isAlertPresent(), "Alert is not present");
+        assertFalse(javaScriptAlertsPage.alertIsPresent(), "Alert is not present");
         assertEquals(javaScriptAlertsPage.getTextOfResultParagraph(), "You successfully clicked an alert");
     }
 
@@ -39,7 +39,7 @@ public class JavaScriptAlertsTest extends BaseTest {
 
         javaScriptAlertsPage.dismissAlert();
 
-        assertFalse(javaScriptAlertsPage.isAlertPresent(), "Alert is not present");
+        assertFalse(javaScriptAlertsPage.alertIsPresent(), "Alert is not present");
         assertEquals(javaScriptAlertsPage.getTextOfResultParagraph(), "You clicked: Cancel");
     }
 
@@ -50,7 +50,7 @@ public class JavaScriptAlertsTest extends BaseTest {
         javaScriptAlertsPage.visit();
 
         javaScriptAlertsPage.clickJsPromptButton();
-        assertTrue(javaScriptAlertsPage.isAlertPresent());
+        assertTrue(javaScriptAlertsPage.alertIsPresent());
 
         javaScriptAlertsPage.dismissAlert();
         assertEquals(javaScriptAlertsPage.getTextOfResultParagraph(), "You entered: null");
@@ -65,7 +65,7 @@ public class JavaScriptAlertsTest extends BaseTest {
 
         javaScriptAlertsPage.enterPromptText("This is a prompt");
 
-        assertFalse(javaScriptAlertsPage.isAlertPresent());
+        assertFalse(javaScriptAlertsPage.alertIsPresent());
         assertEquals(javaScriptAlertsPage.getTextOfResultParagraph(), "You entered: This is a prompt");
     }
 }
