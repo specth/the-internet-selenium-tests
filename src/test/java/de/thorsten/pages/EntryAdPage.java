@@ -22,15 +22,17 @@ public class EntryAdPage extends BasePage {
     WebElement modalContainer;
 
     // Actions
-    public void closeModal() {
-        closeModalButton.click();
+    public void reopenModal() throws InterruptedException {
+        for(int i = 0; i < 5; i++) {
+            if (!modalIsPresent()) {
+                restartAdModal.click();
+            } else {
+                break;
+            }
+        }
     }
 
-    public void reopenModal() {
-        restartAdModal.click();
-    }
-
-    public void closeModalIfPresent() {
+    public void closeModalIfPresent() throws InterruptedException {
         if(modalIsPresent()) {
             closeModalButton.click();
         }
@@ -41,7 +43,9 @@ public class EntryAdPage extends BasePage {
     }
 
     // Checks
-    public boolean modalIsPresent() {
+    public boolean modalIsPresent() throws InterruptedException {
+        // TODO: replace by explicit wait => waitForModalToBePresent()
+        Thread.sleep(1500);
         return modalContainer.isDisplayed();
     }
 }
